@@ -1,0 +1,15 @@
+{
+  "name": "anvar-gpt",
+  "version": "1.0.0",
+  "description": "Anvar GPT - Terminal AI Agent. Works on Windows, Mac and Linux.",
+  "bin": {
+    "anvar": "./bin/anvar.js"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
