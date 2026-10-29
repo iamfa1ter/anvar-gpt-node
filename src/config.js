@@ -3,12 +3,9 @@ const fs   = require('fs');
 const path = require('path');
 const os   = require('os');
 
-// Encoded so GitHub secret scanning won't revoke it
-const _E = 'c2stb3ItdjEtNGViOGJlOGExYjg1NWEwZjVjZjkwNGIwM2IwNjQyYjRmMWZjNTJjZmRmMTY2ZGZkNWNmZjcyYTg5ZGU2ZTBmZA==';
-const _K = Buffer.from(_E, 'base64').toString('utf8');
 
 const DEFAULTS = {
-  apiKey:  _K,
+  apiKey:  process.env.OPENROUTER_API_KEY || '',
   model:   'openai/gpt-oss-120b',
   baseUrl: 'https://openrouter.ai/api/v1',
 };
